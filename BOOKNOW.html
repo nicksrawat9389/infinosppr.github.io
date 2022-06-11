@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/BOOKNOWCSS.css">
+    <title>Book Now</title>
+</head>
+<body>
+
+    <main>
+
+    <div class="center">
+              <h1><span class="name">Book </span>Now</h1>
+
+        <form method="POST" action="booknow.php">
+
+            <div class="txt_field">
+                   <input  type="text" required>
+                   <!-- <i class="mail fa fa-envelope-o"></i> -->
+
+                   <label>Full Name</label>
+            </div>
+            <div class="txt_field">
+                   <input  type="text" required>
+                   <!-- <i class="mail fa fa-envelope-o"></i> -->
+
+                   <label>Mobile Number</label>
+            </div>
+
+            <div class="txt_field">
+                   <input  type="text" required>
+                   <!-- <i class="mail fa fa-envelope-o"></i> -->
+
+                   <label>Email Address</label>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</main>
+
+
+
+
+
+
+<script>
+
+// Function that allows you to view or unview your password
+
+    function myFunction() {
+    let x = document.getElementById('myInput')
+    let y = document.getElementById('hide1')
+    let z = document.getElementById('hide2')
+
+
+    if (x.type === 'password') {
+        x.type = 'text';
+        y.style.display = 'block';
+        z.style.display = 'none';
+    }
+
+    else {
+        x.type = 'password';
+        y.style.display = 'none';
+        z.style.display = 'block';
+    }
+}
+
+
+</script>
+</body>
+</html>
