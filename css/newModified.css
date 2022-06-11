@@ -1,0 +1,132 @@
+.gallery div{
+  margin-right: 10px;
+}
+
+.prd-container {
+  display: flex;
+  gap: 20px;
+}
+.prd-container .prd-item-img{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.prd-item-img img{
+  height: 250px;
+  width: 400px;
+}
+.prd-item-vid iframe{
+  height: 520px;
+  width: 1030px;
+  margin-bottom: 50px;
+}
+
+.gallery img{
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+}
+@media only screen and (max-width : 600px) {
+  .prd-container {
+    flex-direction: column;
+  }
+  .prd-item-vid iframe{
+    height: 100%;
+    width: 100%;
+  }
+
+  .gallery div{
+    margin: 0;
+  }
+}
+
+.wrap {
+    overflow: hidden;
+    margin: 10px;
+  }
+  .box {
+    float: left;
+    position: relative;
+    width: 20%;
+    padding-bottom: 20%;
+  }
+  .boxInner {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+  }
+  .boxInner img {
+    width: 100%;
+  }
+  .boxInner .titleBox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -50px;
+    background: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  section.no-touch .boxInner:hover .titleBox, section.touch .boxInner.touchFocus .titleBox {
+    margin-bottom: 0;
+  }
+  @media only screen and (max-width : 480px) {
+    .box {
+      width: 100%;
+      padding-bottom: 100%;
+    }
+  }
+  @media only screen and (max-width : 650px) and (min-width : 481px) {
+    .box {
+      width: 50%;
+      padding-bottom: 50%;
+    }
+  }
+  @media only screen and (max-width : 1050px) and (min-width : 651px) {
+    .box {
+      width: 33.3%;
+      padding-bottom: 33.3%;
+    }
+  }
+  @media only screen and (max-width : 1290px) and (min-width : 1051px) {
+    .box {
+      width: 25%;
+      padding-bottom: 25%;
+    }
+  }
+
+  .product-main{
+    display: flex;
+    justify-content: center;  
+  }
+
+  .product-main img{
+     margin: 0px 60px; 
+     border: 2px solid lightblue;
+  }
+
+  .product-main h4{
+    margin-top: 10px;
+    text-align: center;
+  }
+
+   @media only screen and (max-width : 750px){
+     .product-main{
+       display: flex;
+       flex-direction: column;
+       justify-content: space-between;
+     }
+     .product1 img{
+       margin: 30px 0px;
+     }
+   }

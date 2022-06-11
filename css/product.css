@@ -1,0 +1,89 @@
+.products h1 {
+  font-weight: 600;
+}
+
+.product-specification {
+  border-radius: 20px;
+}
+
+.product-specification:hover {
+  background-color: #f8f8f8;
+}
+
+.product-main img {
+  border-radius: 20px;
+}
+
+.products .shop-now {
+  background-color: #21b3f1;
+}
+
+.products .btn-shop-now {
+  border: 1px solid white;
+  outline: none;
+  background-color: transparent;
+  padding: 0.5rem 1.3rem;
+  border-radius: 30px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.products .btn-shop-now:hover {
+  background-color: white;
+  color: #21b3f1;
+}
+
+.product-features img {
+  width: 60px;
+  color: #21b3f1;
+}
+
+.product-description {
+  width: 100%;
+  height: 100%;
+}
+
+.product-description .product-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product-description .product-line .descp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.product-description .product-line .descp p {
+  font-size: 1rem;
+  color: black;
+}
+
+.product-description img {
+  width: 64px;
+  height: 64px;
+}
+.product-video video {
+  width: 100%;
+}
+
+.product-details img {
+  margin: auto;
+  width: 600px;
+}
+
+@media (max-width: 800px) {
+  .product-drone img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1090px) {
+  .feature {
+    flex-direction: column;
+  }
+}
